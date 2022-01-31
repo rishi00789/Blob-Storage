@@ -1,0 +1,57 @@
+body{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #2F3242;;
+    font-family: 'SF Mono';
+}
+.files{
+    background-color: white;
+    width: 750px; 
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+a[id=logout]{
+    position:fixed;
+    left:1060px;
+    top: 70px;
+
+}
+svg{
+    position: relative;
+    top: 2px;
+    left:4px;
+}
+#hideMe {
+    position: relative;
+    font-family: SF Mono;
+    padding-left: 465px;
+    padding-top: 20px;
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}

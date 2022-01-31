@@ -1,0 +1,96 @@
+body {
+    padding-top: 200px;
+    padding-bottom: 40px;
+    background-color: #2F3242;;
+    
+  }
+  .container{
+    background-color: white;
+    width: 450px; 
+    height: 420px;
+    border-radius: 15px;
+  }
+  .form-signin {
+    max-width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'SF Mono';
+  }
+  .form-signin-heading
+  {
+    font-family: 'SF Mono';
+  }
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+    
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 5;
+    border-top-right-radius: 5;
+  }
+  a[id=sign]
+  {
+    position: relative;
+    left: 120px;
+    font-family: SF Mono;
+
+  }
+  a[id=log]
+  {
+    position: relative;
+    bottom: 15px;
+    left: 165px;
+    font-family: SF Mono;
+
+  }
+
+  #hideMe {
+    font-family: SF Mono;
+    padding-left: 800px;
+    -moz-animation: cssAnimation 0s ease-in 1s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 1s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 1s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 1s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
