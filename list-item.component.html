@@ -1,9 +1,0 @@
-<div class="item">
-  <span class="item-text">{{node.item}}</span>
-  <span class="icon" >
-    <mat-icon (click)="remove()">cancel</mat-icon>
-  </span>
-</div>
-<div class="child" *ngIf="node.child">
-    <dfx-list-item *ngFor="let child of node.child" [node]="child" class="child"></dfx-list-item>
-</div>
