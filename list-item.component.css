@@ -1,0 +1,32 @@
+*{
+    font-size: .9em;
+    font-weight: 200;
+}
+.item{
+    position: relative;
+    padding-left:4em;
+    font-size: .9em;
+    margin:8px 0;
+    margin-bottom:0;
+
+    .icon{
+      position: relative;
+      top:2px;
+      left:8px;
+      color:#4a4a4a;
+      cursor: pointer;
+    }
+
+}
+
+.item::before{
+    content:'';
+    position: absolute;
+    left: 2em;
+    bottom:50%;
+    width: 1em;
+    height: 1.7em;
+    border:1px dotted transparent;
+    border-left-color: rgba(0,0,0,.5);
+    border-bottom-color: rgba(0,0,0,.5);
+}

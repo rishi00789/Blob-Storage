@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0;
+}
+
+.item-wrapper {
+    display: flex;
+
+    mat-icon {
+        opacity: 0;
+        font-size: 0.9em;
+        position: relative;
+        top: 4px;
+        left: 8px;
+        color: #737373;
+    }
+}
+h3.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: normal;
+    padding: 12px;
+}
+
+h3.title:hover {
+    cursor: pointer;
+
+    .item-wrapper {
+        mat-icon {
+            opacity: 1;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.wrapper:hover {
+    background: #efefef;
+
+    h3.title {
+        .text {
+            text-decoration: underline;
+            color: #333;
+        }
+    }
+}
+
+mat-checkbox {
+    margin-top: 12px;
+    margin-right: 8px;
+}
+
+.expand-child {
+    margin-left: 36px;
+    margin-bottom: 12px;
+
+    h3 {
+        font-weight: normal;
+        display: block;
+        padding: 0 12px;
+        border-radius: 8px;
+        font-size: 1em;
+        margin: 0;
+    }
+}
+
+.child {
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+.child-title-wrapper {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 12px;
+    user-select: none;
+
+    * {
+        user-select: none;
+    }
+}
+
+.child-title-wrapper:hover h3 {
+    text-decoration: underline;
+    color: #666;
+}
+
+.child-title-wrapper:first-child {
+    margin-top: 0;
+}
+
+.inline {
+    display: flex;
+    font-size: 1.1em;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid #efefef;
+    color: #ccc;
+}
+
+.inline:hover {
+    background: #efefef;
+    color: #999;
+    border-top-color: transparent;
+}
+
+.inline .new {
+    margin-left: 16px;
+}
+
+.new-item {
+    font-weight: 200;
+    margin-left: 16px;
+
+    .inline {
+        display: flex;
+        font-size: 0.9em;
+        padding: 10px;
+        cursor: pointer;
+        color: #ccc;
+        border-top: none;
+    }
+
+    .inline:hover {
+        background: #efefef;
+        color: #999;
+        border-bottom: none;
+    }
+
+    .inline .new {
+        margin-left: 8px;
+    }
+
+    mat-icon {
+        font-size: 1.2em;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    box-sizing: border-box;
+}
